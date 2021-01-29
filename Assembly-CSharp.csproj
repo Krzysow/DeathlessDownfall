@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{674245B2-8D2A-2FAD-CD0E-A228450B6B84}</ProjectGuid>
+    <ProjectGuid>{34867675-9603-C5C0-49CE-E54CD44F3886}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,8 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/EnemyAI.cs" />
+    <Compile Include="Assets/Scripts/Weapon.cs" />
+    <Compile Include="Assets/Scripts/EnemyHealth.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets/Asset Packs/Survival Carbine/Thanks To Michael.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.1.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -623,7 +626,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8E3A9C58-354C-855D-5313-E0B68A795F44}</Project>
+      <Project>{338E097F-EDCF-6C02-05BE-F432F5148E26}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
