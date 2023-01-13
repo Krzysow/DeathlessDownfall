@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2343943443997850664}
-  m_LocalRotation: {x: -0.011988451, y: -0.03423705, z: -0.19089529, w: 0.9809399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.224, y: 0.705, z: 0.432}
   m_LocalScale: {x: 0.25, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 6061941095778939158}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -2.097, y: -3.591, z: -21.959}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8484316569973883860
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -108,9 +108,10 @@ GameObject:
   - component: {fileID: 6061941095778939156}
   - component: {fileID: 6061941095778939371}
   - component: {fileID: 6061941095778939370}
+  - component: {fileID: 4177218288991901035}
   - component: {fileID: 321885528564007408}
   - component: {fileID: 6061941095778939369}
-  - component: {fileID: 4177218288991901035}
+  - component: {fileID: 7650820915545542983}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -207,11 +208,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -219,6 +220,25 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &4177218288991901035
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061941095778939368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f292e465ec4e44d948697f46dec93ff8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &321885528564007408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,26 +265,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  chaseRange: 5
---- !u!95 &4177218288991901035
-Animator:
-  serializedVersion: 3
+  chaseRange: 25
+  turnSpeed: 5
+--- !u!114 &7650820915545542983
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6061941095778939368}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f292e465ec4e44d948697f46dec93ff8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e40192e7bcf1b44bb79c545f2812a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
 --- !u!1 &8859651742967959693
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,13 +306,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8859651742967959693}
-  m_LocalRotation: {x: 0.023921479, y: 0.027270416, z: 0.18977061, w: 0.98115814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.224, y: 0.705, z: 0.43200037}
   m_LocalScale: {x: 0.25, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 6061941095778939158}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 2.097, y: 3.591, z: 21.959}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9123045069403759745
 MeshFilter:
   m_ObjectHideFlags: 0
